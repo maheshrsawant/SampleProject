@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Stage Regression Suite">
+  <test name="Automation Test">
+    <classes>
+		
+			<class name="com.Test.AccessRequestTest"/>
+			<class name="com.Test.AddSupplyTest"/>
+			<class name="com.Test.ChangeRollOffTest"/>
+			<class name="com.Test.ContactUsTest"/>
+			<class name="com.Test.DemandCancellationTest"/>
+			<class name="com.Test.DemandCloneTest"/>
+			<class name="com.Test.DemandCreationTest"/>
+			<class name="com.Test.DemandDashboardTest"/>
+			<class name="com.Test.DemandDetailsTest"/>
+			<class name="com.Test.DemandMaintenanceRRMatrixTest"/>
+			<class name="com.Test.GeneralEditTest"/>
+			<class name="com.Test.MatchingRolesTest"/>
+			<class name="com.Test.MatchingSupplyTest"/>
+			<class name="com.Test.PendingApprovalTest"/>
+			<class name="com.Test.QuickEditTest"/>
+			<class name="com.Test.RefusalTest"/>
+			<class name="com.Test.RejectionTest"/>
+			<class name="com.Test.ReportDashboardTest"/>
+			<class name="com.Test.ResourceProfileTest"/>
+			<class name="com.Test.RFFDashboardTest"/>
+			<class name="com.Test.SplashScreenTest"/>
+			<class name="com.Test.SRDetailVerification"/>
+			<class name="com.Test.SRTest"/>
+			<class name="com.Test.TaggingTest"/>
+			<class name="com.Test.TeamTest"/>
+			<class name="com.Test.TopSearchTest"/>
+			<class name="com.Test.VersionHistoryTest"/>
+			<class name="com.Test.SourcingStrategyTest"/>
+			<class name="com.Test.SplashScreenTest"/>
+			<class name="com.Test.LibraryTest"/>
+			<class name="com.Test.FeedbackTest"/>
+			<class name="com.Test.EmailVerificationTest"/>
+			<class name="com.Test.MatchingScoreCalculationTest"/>
+			<class name="com.Test.SwapLockTest"/>	
+			<class name="com.Test.LockingIOMTest"/>
+			<class name="com.Test.LockingTest"/>
+			<class name="com.Test.TransferTest"/>
+			
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Stage Regression Suite]">
+  <test name="Automation Test">
+    <classes>
+      <class name="com.Test.TeamTest"/>
+      <class name="com.Test.TransferTest"/>
+      <class name="com.Test.TaggingTest"/>
+    </classes>
+  </test> <!-- Automation Test -->
+  <test name="Automation Test(failed)">
+    <classes>
+      <class name="com.Test.TaggingTest">
+        <methods>
+          <include name="TC05_resPageTagDU"/>
+          <include name="TC07_benchAgeValidation"/>
+          <include name="AfterClass"/>
+          <include name="beforeMethod"/>
+          <include name="TC09_realTimeRefreshTagging"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.Test.TaggingTest -->
+      <class name="com.Test.TeamTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="TC02_ToVerifyCountUsingPSU"/>
+          <include name="TC01_ToVerifyCountUsingDU"/>
+          <include name="TC06_ToVerifyBulkAcionsUsingAGRML"/>
+          <include name="AfterClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="TC10_ToVerifyShadowEndDateOn40ResourceUsingAGRML"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.Test.TeamTest -->
+      <class name="com.Test.TransferTest">
+        <methods>
+          <include name="TC05_tirRaisedSuccesfully"/>
+          <include name="TC09_sameProjectFHL"/>
+          <include name="AfterClass"/>
+          <include name="TC04_validationMessage"/>
+          <include name="beforeMethod"/>
+          <include name="TC10_ASTIntegration"/>
+          <include name="getResult"/>
+          <include name="TC06_sameWorklocLRonCrossIGTIR"/>
+        </methods>
+      </class> <!-- com.Test.TransferTest -->
+    </classes>
+  </test> <!-- Automation Test(failed) -->
+</suite> <!-- Failed suite [Stage Regression Suite] -->

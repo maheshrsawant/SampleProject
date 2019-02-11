@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Suite]">
+  <test name="Sanity">
+    <classes>
+      <class name="com.Test.DemandCancellationTest">
+        <methods>
+          <include name="TC01_ToVerifyCancelAction"/>
+        </methods>
+      </class> <!-- com.Test.DemandCancellationTest -->
+      <class name="com.Test.DemandCreationTest">
+        <methods>
+          <include name="TC01_CreateNonGCPDemand"/>
+        </methods>
+      </class> <!-- com.Test.DemandCreationTest -->
+      <class name="com.Test.MatchingSupplyTest">
+        <methods>
+          <include name="TC12_captiveSupply"/>
+        </methods>
+      </class> <!-- com.Test.MatchingSupplyTest -->
+      <class name="com.Test.DemandCancellationTest">
+        <methods>
+          <include name="TC01_ToVerifyCancelAction"/>
+        </methods>
+      </class> <!-- com.Test.DemandCancellationTest -->
+      <class name="com.Test.DemandCreationTest">
+        <methods>
+          <include name="TC01_CreateNonGCPDemand"/>
+        </methods>
+      </class> <!-- com.Test.DemandCreationTest -->
+      <class name="com.Test.ChangeRollOffTest">
+        <methods>
+          <include name="TC01_rollOffTeamPage"/>
+        </methods>
+      </class> <!-- com.Test.ChangeRollOffTest -->
+      <class name="com.Test.SwapLockTest">
+        <methods>
+          <include name="TC01_swapLock"/>
+        </methods>
+      </class> <!-- com.Test.SwapLockTest -->
+      <class name="com.Test.SRTest">
+        <methods>
+          <include name="TC04_createSR"/>
+        </methods>
+      </class> <!-- com.Test.SRTest -->
+      <class name="com.Test.TaggingTest">
+        <methods>
+          <include name="TC01_addSupplyTagDU"/>
+        </methods>
+      </class> <!-- com.Test.TaggingTest -->
+    </classes>
+  </test> <!-- Sanity -->
+</suite> <!-- Failed suite [Sanity Suite] -->

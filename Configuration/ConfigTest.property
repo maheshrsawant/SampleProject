@@ -1,0 +1,47 @@
+dbURL=jdbc:sqlserver://VRTVD2400:1433;databaseName=Abacus;Trusted_Connection=true;integratedSecurity=true
+
+
+
+chromeDriver=/Drivers/chromedriver.exe
+firefoxDriver=/Drivers/geckodriver.exe
+IEdriver=/Drivers/IEDriverServer.exe
+ssaUrl=https://abacusmatchingsupply.ciotest.accenture.com/home
+
+testingType=Regression (Selective)
+browserName=chrome
+
+urldown=URL is Down, Please check
+urlup=URL Is Ok
+MinCutoffToCreateSuccessTxtFile=80.00
+
+
+MyuserName=username
+Mypass=
+
+User Group- Central Team, UG role - Talent Fulfillment Specialist, Administrator, Central Team
+uName=T02109AbacusDSM.TU02
+pass=
+
+
+password=d1M2WG4zMjRrNTdSdjlBMWhDMDA=
+
+User Group- AG, UG Members -AVANADE, CIO, CMT, Digital, FS, UG roles - BenchOps
+username_AG=T02109AbacusDSM.TU01
+
+User Group- DU, UG role - DU Lead
+username_DU=T02109AbacusDSM.TU02
+
+User Group- Central Team, UG role -Talent Fulfillment Specialist, Administrator
+username_Central=T02109AbacusDSM.TU03
+
+User Group- Central Team, UG role -Talent Fulfillment Specialist, Administrator
+username_PSU=T02109AbacusDSM.TU04
+
+User Group - No Access
+username_NoAccess=T02109AbacusDSM.TU05
+
+User Group - Only TFS access for Splash Screen
+username_TFS=T02109AbacusDSM.TU06
+
+User Group - Only DMT access for DMT users
+username_DMT=T02109AbacusDSM.TU07

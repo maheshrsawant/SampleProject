@@ -1,0 +1,5 @@
+set projectLocation=
+cd %projectLocation%
+set classpath=%projectLocation%\RegSuite.jar
+java -jar -Xmx2048m  RegSuite.jar
+pause

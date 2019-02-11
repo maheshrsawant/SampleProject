@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite">
+
+<test name="Sanity">
+<classes>
+
+<class name="com.Test.DemandCancellationTest">
+  <methods>
+        <include name="TC01_ToVerifyCancelAction" />       
+      </methods>
+</class>
+
+<class name="com.Test.DemandCreationTest">
+  		<methods>  
+        <include name="TC01_CreateNonGCPDemand" />    
+      </methods>
+</class>
+<class name="com.Test.MatchingSupplyTest">
+  <methods>
+        <include name="TC12_captiveSupply"/>          
+   </methods>
+</class> 
+
+<class name="com.Test.DemandCancellationTest">
+  <methods>
+        <include name="TC01_ToVerifyCancelAction" />       
+      </methods>
+</class>
+
+<class name="com.Test.DemandCreationTest">
+  		<methods>  
+        <include name="TC01_CreateNonGCPDemand" />    
+      </methods>
+</class>
+
+<class name="com.Test.ChangeRollOffTest">
+  <methods>
+        <include name="TC01_rollOffTeamPage" />    
+      </methods>
+</class>
+
+<class name="com.Test.SwapLockTest">
+  <methods>
+        <include name="TC01_swapLock" />
+   </methods>
+</class>
+
+<class name="com.Test.SRTest">
+  <methods>
+        <include name="TC04_createSR" />          
+   </methods>	
+</class>
+
+<class name="com.Test.TaggingTest">
+  <methods>
+        <include name="TC01_addSupplyTagDU" />
+   </methods>
+</class>
+
+</classes>
+</test>
+
+</suite>
+
+
