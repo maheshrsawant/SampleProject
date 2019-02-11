@@ -3,13 +3,9 @@
 <suite name="Stage Regression Suite">
   <test name="Automation Test">
     <classes>
-		
-		
-			<class name="com.Test.TeamTest"/>
-			<class name="com.Test.TransferTest"/>
-			<class name="com.Test.TaggingTest"/>
-			
-			
+
+			<class name="com.Test.MatchingSupplyTest"/>
+	
     </classes>
   </test>
 </suite>
