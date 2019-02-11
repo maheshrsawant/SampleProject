@@ -30,7 +30,6 @@ public class MatchingSupplyPage {
 	WebDriver driver;
 	MethodFactory mf = new MethodFactory();
 	ConfigReader config = new ConfigReader();
-	public static ExportPage ex = new ExportPage();
 	public static String getResourcePersonnalNumberforDraft=null;
 	public static String skillSelectedOnSupplyPage=null;
 	public static int rowNumber;
@@ -667,7 +666,7 @@ public class MatchingSupplyPage {
 			 if (a == 0) 
 			 {
 				 
-			 mf.taggedTab(driver,RejectionPage.RejSSPath1, logger);
+			 mf.taggedTab(driver,path, logger);
 			 WebDriverWait wait = new WebDriverWait(driver, 60);
 	   		 
 			 wait.until(ExpectedConditions.or(
@@ -752,7 +751,7 @@ public class MatchingSupplyPage {
 			 if (a == 0) 
 			 {
 				 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				 mf.taggedTab(driver,RejectionPage.RejSSPath1, logger);
+				 mf.taggedTab(driver,path, logger);
 				 WebDriverWait wait = new WebDriverWait(driver, 60);
 		   		 
 				 wait.until(ExpectedConditions.or(
@@ -2440,43 +2439,7 @@ public class MatchingSupplyPage {
 				,"Good to Have Skills","Must to have Skills","Client Interview Required",
 				"Ready to Hard Lock Changed On","No. of Resources Tagged","Demand Flagged","IJP Applicant(s)",
 				" ACM Applicant(s)","Channel","SR No","Lock Type / SR Status","SR Type of Approval","SR Approval Status","Captive"};
-    public void exportDemand(WebDriver driver, String path, ExtentTest logger) throws Exception
-	{
-		String fileName ="Report_Demand_Details.xlsx";
-		String filePath = "C:/Users/"+ System.getProperty("user.name")+"/Downloads/";
-		UtilMethods.waitTillElementIsVisible(logger, driver, rrdNumberOnDemandPage.get(0), " RRD ");
-		System.out.println("export file path is "+filePath);
-		logger.log(LogStatus.INFO,"export file path is "+filePath);
-		TS = TakeScreenshot.captureScreenshots(driver, "Demand Screen", path);
-	    Thread.sleep(3000);
-	    ex.CheckExistingFile(fileName, logger, filePath);
-	    ex.deleteExistingFile(fileName, logger);
-	    
-		UtilMethods.clickOn(logger, demandExportLink.get(0), "demandExportLink");
-		Thread.sleep(10000);
-		
-		
-		String acuatualColumnName="Captive";
-		String expColumnName = ExportPage.getExportData(fileName,"Sheet 1",0,36);
-		System.out.println("Expected data is "+acuatualColumnName);
-		System.out.println("Excel data is "+expColumnName);
-		
-		if(acuatualColumnName.equalsIgnoreCase(expColumnName)) {
-			logger.log(LogStatus.PASS,"New 'Captive' column present in demand dump");
-			System.out.println("New 'Captive' column present in demand dump");
-			softly.assertTrue(true);
-			
-		}
-		else {
-			TS = TakeScreenshot.captureScreenshots(driver, "Demand Screen", path);
-			logger.log(LogStatus.FAIL,"New 'Captive' column is not present in demand dump"+logger.addScreenCapture(TS));
-			System.out.println("New 'Captive' column is not present in demand dump");
-			softly.assertTrue(false);
-		}
-			
-		
-	}
-    
+   
 	
     
 public void checkallassert()
